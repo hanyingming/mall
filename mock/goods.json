@@ -1,0 +1,28 @@
+/*此文件为模拟数据*/
+{
+  "status": 0,
+  "msg": "",
+  "data": [
+    {
+      "productId":"0000001",
+      "productName":"商品1",
+      "productPrice": 888,
+      "productImg":"1static/3.jpg"
+    },{
+      "productId":"0000002",
+      "productName":"商品2",
+      "productPrice": 666,
+      "productImg":"static/2.jpg"
+    },{
+      "productId":"0000003",
+      "productName":"商品3",
+      "productPrice": 333,
+      "productImg":"static/3.jpg"
+    },{
+      "productId":"0000004",
+      "productName":"商品4",
+      "productPrice": 999,
+      "productImg":"static/4.jpg"
+    }
+  ]
+}
