@@ -1,42 +1,55 @@
-# mall
+Vue2.0 购物商城项目
 
-> vue + vue-router + axios + vuex    express + mongoose
+    采用MongoDB数据库。
+    项目的功能：
+      1.实现商品列表的价格的升降序、价格的过滤、分页。
+      2.用户的登录与登出
+      3.购物车的实现
+      4.地址模块的实现
+      5.订单的生成
+      6.Vuex对购物车商品数量的应用
 
-## Build Setup
+    后端开发框架：
+      express + mongoose
+    前端开发框架：
+      vue + vue-router + axios + vuex + vue-infinite-scroll + vue-lazyload
 
-``` bash
-# install dependencies
-npm install
+项目的运行
 
-# serve with hot reload at localhost:8080
-npm run dev
+     clone项目源码
+        git clone https://github.com/hanyingming/mall.git
+        
+     安装MongoDb数据库，找到resource文件夹下的dumall-goods、dumall-users文件导入MongoDB数据库。
+     导入数据的命令：
+        mongoimport -d 数据库名 -c 集合名 --file 文件路径
+        
+     mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data\mmapv1\db
+     
+     安装后端依赖
+        cd mall/demo-server
+        npm install
+     后端运行
+        npm run start
+     打开浏览器进入localhost:3000/goods 查看后台接口是否正常。
+     
+     安装依赖前端依赖（保证后端程序正常运行）
+        cd mall
+        npm install
+     前端运行
+        npm run dev
+     打开浏览器进入localhost 查看效果。
 
-# build for production with minification
-npm run build
+运行环境：
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+    Node(v6.11) + npm(3.10.10) + mongodb + 浏览器
 
-![image](https://github.com/hanyingming/mall/blob/master/static/gif/intro.gif)
+效果图：
 
-# 购物商城项目：
-	采用MongoDB数据库。
-	项目的功能：
-		1.实现商品列表的价格的升降序、价格的过滤、分页。
-		2.用户的登录与登出
-		3.购物车的实现
-		4.地址模块的实现
-		5.订单的生成
-		6.Vuex对购物车商品数量的应用
-
-	后端开发框架：
-		express + mongoose
-	前端开发框架：
-		vue + vue-router + axios + vuex + vue-infinite-scroll + vue-lazyload
+    ![image](https://github.com/hanyingming/mall/blob/master/static/gif/intro.gif)
 
 
-# 后端项目的创建：
+后端项目的创建：
+
 	安装npm install -g express
 	安装是否成功的命令：
 	express --version
@@ -103,7 +116,7 @@ npm run build --report
 		使用Dos窗口命令直接导入数据：
 		mongoimport -d 数据库名 -c 集合名 --file 文件路径
 
-mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data\mmapv1\db
+    mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data\mmapv1\db
 
 
 # 前端项目mall的创建：
