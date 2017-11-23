@@ -44,7 +44,12 @@
     
 
 # 效果图：
-   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/intro.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/001.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/002.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/003.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/004.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/005.gif)
+   ![image](https://github.com/hanyingming/mall/blob/master/static/gif/006.gif)
 
 
 # 后端项目的创建：
