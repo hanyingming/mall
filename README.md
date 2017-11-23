@@ -1,5 +1,4 @@
-Vue2.0 购物商城项目
-
+# Vue2.0 购物商城项目
     采用MongoDB数据库。
     项目的功能：
       1.实现商品列表的价格的升降序、价格的过滤、分页。
@@ -12,10 +11,10 @@ Vue2.0 购物商城项目
     后端开发框架：
       express + mongoose
     前端开发框架：
-      vue + vue-router + axios + vuex + vue-infinite-scroll + vue-lazyload
+      vue + vue-router + axios + vuex + vue-infinite-scroll + vue-lazyload
 
-项目的运行
 
+# 项目的运行
      clone项目源码
         git clone https://github.com/hanyingming/mall.git
         
@@ -38,13 +37,13 @@ Vue2.0 购物商城项目
      前端运行
         npm run dev
      打开浏览器进入localhost 查看效果。
+     
 
-运行环境：
-
+# 运行环境：
     Node(v6.11) + npm(3.10.10) + mongodb + 浏览器
+    
 
-效果图：
-
+# 效果图：
     ![image](https://github.com/hanyingming/mall/blob/master/static/gif/intro.gif)
 
 
