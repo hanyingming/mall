@@ -284,7 +284,8 @@ router-view标签的key值默认会随着所渲染的组件进行生成唯一不
 Vue的基础介绍：
   vue数据驱动，组件化，内置模板引擎。
   响应式：元素。
-  vue的基础语法：
+  vue的基础语法。
+
   	模板语法：
   		Mustache语法：{{msg}} 只作用于文本。
   		html赋值：v-html=""
@@ -295,7 +296,7 @@ Vue的基础介绍：
   		过滤器：{{msg|cap}}
   		双向数据流：v-model="" 用于表单输入
 
-  	条件渲染
+  	条件渲染：
   		v-if
   		v-else
   		v-else-if
@@ -303,7 +304,7 @@ Vue的基础介绍：
   				false不渲染
   		v-cloak 隐藏html代码
 
-  	vue事件处理器
+  	vue事件处理器：
   		v-on:click="greet"或者@click="greet"
   		v-on:click.stop
   		v-on:clck.stop.prevent
@@ -326,10 +327,10 @@ Vue的基础介绍：
   	npm install
   	npm run dev
 
-  	# 路由：根据不同的url展示不同的内容或页面。
-  # 前端路由：不同的url展示不同的内容或页面交给前端完成。
-  	# 优点：用户体验好，不需要每次都从服务器全部获取，快速展现给用户。
-  	# 缺点：不有利于SEO收录。
+  	路由：根据不同的url展示不同的内容或页面。
+  	前端路由：不同的url展示不同的内容或页面交给前端完成。
+  	优点：用户体验好，不需要每次都从服务器全部获取，快速展现给用户。
+  	缺点：不有利于SEO收录。
   		  无法使用浏览器的前进、后退功能，每次都会重新发送请求，无法合理地使用缓存。
   		  单页面无法记住之前滚动的位置。
   什么时候使用前端路由：单页面应用，大部分的页面结构不发生变化，只改变部分内容。
@@ -346,7 +347,7 @@ Vue的基础介绍：
 
 
 
-MongoDB的基础介绍：
+# MongoDB的基础介绍：
   MongoDB的特征：
   	高可扩展性
   	分布式存储
@@ -360,11 +361,10 @@ MongoDB的基础介绍：
   	win10必须使用管理员打开Dos窗口
   	mongod.exe --dbpath "C:\data\db" --logpath "C:\data\dbConf\mongodb.log" --install --serviceName "mongodb"
 
-  # 切换至admin数据库。
-  # 也可以使用db = db.getSiblingDB('admin')代替use admin。
+  切换至admin数据库，也可以使用db = db.getSiblingDB('admin')代替use admin。
   use admin
 
-  # 创建管理员用户，并指定其权限。
+  创建管理员用户，并指定其权限。
   db.createUser({
     user : 'root',
     pwd : '123456',
