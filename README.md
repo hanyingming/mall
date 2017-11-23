@@ -36,7 +36,6 @@ npm run build --report
   (5)npm run dev (用于vue-cli创建的项目)
 
 
-
 MongoDB的特征：
 	高可扩展性
 	分布式存储
@@ -147,8 +146,8 @@ MongoVue：Mongodb数据库的客户端。
 mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data\mmapv1\db
 
 前端项目vue10的创建：
-	初始化项目：vue init webpack vue10
-	进入项目：cd vue10
+	初始化项目：vue init webpack mall
+	进入项目：cd mall
 	安装依赖：npm install
 	安装axios：npm install axios --save
 	测试项目初始化是否成功：
@@ -239,7 +238,7 @@ mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data
 	orderStatus: 1,//订单状态
 	createData: createDate//下单日期
 
-六.vuex对购物车商品数量的应用
+六、Vuex对购物车商品数量的应用
 	Vuex:
 		什么是vuex？
 		为什么使用vuex？
@@ -260,7 +259,3 @@ Vuex的核心概念：
 	Modules：代码拆分（stroe对象分割成模块（moules））；
 使用vuex动态绑定购物车中商品的数量。
 后台设计接口：/cart/getCartNum;提供当前用户的购买商品的数量。
-
-
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
