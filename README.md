@@ -47,7 +47,7 @@
    ![image](https://github.com/hanyingming/mall/blob/master/static/gif/intro.gif)
 
 
-后端项目的创建：
+# 后端项目的创建：
 
 	安装npm install -g express
 	安装是否成功的命令：
