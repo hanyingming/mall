@@ -18,6 +18,7 @@ npm run build
 npm run build --report
 ```
 
+![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
 
 # 购物商城项目：
 	采用MongoDB数据库。
