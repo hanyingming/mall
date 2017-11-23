@@ -20,6 +20,7 @@ npm run build --report
 
 基础知识：
   vue-resource和axios异步请求插件的异同：
+  
   axios不支持跨域。需要配置config目录下的index.js文件中的proxyTable。
   proxyTable:{
     '/goods':{
