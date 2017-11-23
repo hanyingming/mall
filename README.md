@@ -18,28 +18,6 @@ npm run build
 npm run build --report
 ```
 
-# MongoDB的操作：
-    基本配置：mongo.conf
-    命令：mongod --conf C:\data\etc\mongo.conf
-    可以配置的名利如下：
-    #数据库路径
-    dbpath=C:\data\db
-    #日志输出文件路径
-    logpath=C:\data\dbConf\mongo.log
-    #错误日志应该采用追加模式，配置这个选项后，mongodb的日志会自动追加到现有的日志文件，而不是重新创建一个新文件。
-    logappend=true
-    #启用日志文件，默认启用
-    journal=true(win32需要配置)
-    过滤无用的日志信息，若需要调试请设置为false
-    quiet=true
-    #端口号 默认为27017
-    port=27017
-    #指定存储引擎（默认不需要配置此引擎，win32需要配置）
-    storageEngine=mmapv1
-    #http配置(服务启动的时候开启28017日志端口)
-    httpinterface=true
-    MongoVue：Mongodb数据库的客户端。
-
 
 # 购物商城项目：
 	采用MongoDB数据库。
@@ -49,7 +27,7 @@ npm run build --report
 		3.购物车的实现
 		4.地址模块的实现
 		5.订单的生成
-		6.uex对购物车商品数量的应用
+		6.Vuex对购物车商品数量的应用
 
 	后端开发框架：
 		express + mongoose
@@ -355,17 +333,40 @@ mongodb数据库服务的启动：mongod --storageEngine mmapv1 --dbpath C:\data
 
 # MongoDB的基础介绍：
     MongoDB的特征：
-      高可扩展性
-      分布式存储
-      低成本
-      结构灵活
-    mongodb的命令：
-      配置环境变量：
-      打开我的电脑--》右键属性--》点击环境变量---》点击path--->添加mongodb安装的路径
-
-  	建立windows系统服务的命令:
-  	win10必须使用管理员打开Dos窗口
-  	mongod.exe --dbpath "C:\data\db" --logpath "C:\data\dbConf\mongodb.log" --install --serviceName "mongodb"
+        高可扩展性
+        分布式存储
+        低成本
+        结构灵活
+    
+    MongoVue：Mongodb数据库的客户端。
+        
+    MongoDB的配置：
+      基本配置文件：mongo.conf
+      命令：mongod --conf C:\data\etc\mongo.conf
+      
+      可以配置的命令如下：
+      #数据库路径
+      dbpath=C:\data\db
+      #日志输出文件路径
+      logpath=C:\data\dbConf\mongo.log
+      #错误日志应该采用追加模式，配置这个选项后，mongodb的日志会自动追加到现有的日志文件，而不是重新创建一个新文件。
+      logappend=true
+      #启用日志文件，默认启用
+      journal=true(win32需要配置)
+      过滤无用的日志信息，若需要调试请设置为false
+      quiet=true
+      #端口号 默认为27017
+      port=27017
+      #指定存储引擎（默认不需要配置此引擎，win32需要配置）
+      storageEngine=mmapv1
+      #http配置(服务启动的时候开启28017日志端口)
+      httpinterface=true
+      
+      Windows配置全局环境变量：
+        打开我的电脑--》右键属性--》点击环境变量---》点击path--->添加mongodb安装的路径
+        建立windows系统服务的命令:
+          win10必须使用管理员打开Dos窗口
+          mongod.exe --dbpath "C:\data\db" --logpath "C:\data\dbConf\mongodb.log" --install --serviceName "mongodb"
 
     切换至admin数据库，也可以使用db = db.getSiblingDB('admin')代替use admin。
     use admin
